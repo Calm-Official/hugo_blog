@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Hugo on 逐星落汐.</title>
+        <link>http://localhost:1313/tags/hugo/</link>
+        <description>Recent content in Hugo on 逐星落汐.</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>逐星落汐.</copyright>
+        <lastBuildDate>Mon, 17 Mar 2025 11:09:56 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Hexo</title>
+        <link>http://localhost:1313/p/hexo/</link>
+        <pubDate>Mon, 17 Mar 2025 11:09:56 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/hexo/</guid>
+        <description>&lt;h1 id=&#34;搭建hexo博客&#34;&gt;搭建Hexo博客
+&lt;/h1&gt;&lt;h2 id=&#34;1-环境说明&#34;&gt;1. 环境说明
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Nodejs 20.14.0（最低不低于 10.13）&lt;/li&gt;
+&lt;li&gt;Git 2.45.2&lt;/li&gt;
+&lt;li&gt;需要有&lt;strong&gt;科学上网&lt;/strong&gt;环境&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;说明&lt;/strong&gt;：上面的版本只是我自己使用到的版本&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;:/69cf9d7a86424f91af95afd8fc6d5253&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;环境准备.PNG&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2-开始安装hexo&#34;&gt;2. 开始安装Hexo
+&lt;/h2&gt;&lt;h3 id=&#34;21-安装hexo&#34;&gt;2.1 安装hexo
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm install -g hexo-cli
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;安装完成输入hexo -v查看版本&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;:/afaa8db138ff4796aff4199fe6cd5970&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Hexo版本.PNG&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;22-初始化hexo&#34;&gt;2.2 初始化hexo
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hexo init Blog
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;23-进入文件夹安装npm&#34;&gt;2.3 进入文件夹，安装npm
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cd Blog
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm install
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;然后hexo就安装完成了&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;:/302a50ea1ab74c688bfc9d22d8bf8d4f&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Hexo目录结构.PNG&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;24-启动hexo服务器&#34;&gt;2.4 启动hexo服务器
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hexo g
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hexo s
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;:/88b793fa70ce43849cff6dfc19459a48&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;启动Hexo服务.PNG&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;访问http://localhost:4000，至此hexo就搭建好了&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;:/71adf27da5944eb7a2f89969979d0ec4&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;访问本地Hexo.PNG&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3-fluid主题&#34;&gt;3. Fluid主题
+&lt;/h2&gt;&lt;h3 id=&#34;31-下载&#34;&gt;3.1 下载
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;:/f89709c4fb28484080f805214dc554a5&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Fluid主题.PNG&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;下载Fluid主题，GitHub：https://github.com/fluid-dev/hexo-theme-fluid/releases&lt;/p&gt;
+&lt;h3 id=&#34;32-安装&#34;&gt;3.2 安装
+&lt;/h3&gt;&lt;p&gt;下载完成后解压出来把文件夹修改成&lt;code&gt;fulid&lt;/code&gt;，然后放置在Blog目录下的&lt;code&gt;themes&lt;/code&gt;文件夹里&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;:/620c0640287940259c3f9232dbb4b5f7&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Fluid主题安装.PNG&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;把&lt;code&gt;_config.yml&lt;/code&gt;里的&lt;code&gt;theme: landscape&lt;/code&gt;修改成&lt;code&gt;fluid&lt;/code&gt;，至此Fluid主题就安装完成了&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;:/6027fd0947674ce49cfc1e9e3e670cde&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Fluid主题配置文件修改.PNG&#34;
+	
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
